@@ -7,10 +7,15 @@
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/grid.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/google-map.css">
 
     <script src="js/jquery.js"></script>
     <script src="js/jquery-migrate-1.2.1.js"></script>
 
+    <script src="js/google-map.js"></script>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDNLJlCmYTCuI13hL699GcxxlpBDcTsXnE&signed_in=true&libraries=places&callback=initMap"
+            async defer></script>
 
     <!--[if lt IE 9]>
     <html class="lt-ie9">
@@ -22,8 +27,7 @@
     </div>
     <script src="js/html5shiv.js"></script>
     <![endif]-->
- 
-    <script src='js/device.min.js'></script> 
+
 </head>
 
 <body>
@@ -69,6 +73,13 @@
                               CONTENT
     =========================================================-->
     <main>
+        <section>
+            <input id="pac-input" class="controls" type="text"
+                   placeholder="Enter a location">
+
+            <div id="map"></div>
+
+        </section>
         <section class="well well__offset-3">
             <div class="container">
                 <div class="row box-2">
