@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <title>Schedule</title>
@@ -18,14 +18,20 @@
     <link rel="stylesheet" href="/resources/demos/style.css">
     <script>
         $(function() {
-            $( "#datepicker" ).datepicker();
+            $( "#datepicker" ).datepicker({
+                showOn: "button",
+                buttonImage: "images/calendar.gif",
+                buttonImageOnly: true,
+                buttonText: "Select date"
+            });
             $("#datepicker").on("change",function(){
+                $( "#datepicker" ).datepicker( "option", "dateFormat", "d MM, y");
                 var selected = $(this).val(); // store the selected date
             });
         });
     </script>
 
-    <!--[if lt IE 9]>
+   <!--[if lt IE 9]>
     <html class="lt-ie9">
     <div style=' clear: both; text-align:center; position: relative;'>
         <a href="http://windows.microsoft.com/en-US/internet-explorer/..">
@@ -51,14 +57,14 @@
 
                 <div class="brand">
                     <h1 class="brand_name">
-                        <a href="./">One Day @SG</a>
+                        <a href="index.html">One Day @SG</a>
                     </h1>
                 </div>
 
                 <nav class="nav">
                     <ul class="sf-menu">
                         <li>
-                            <a href="./">Home</a>
+                            <a href="index.html">Home</a>
                         </li>
                         <li class="active">
                             <a href="index-1.html">Schedule</a>
@@ -84,7 +90,9 @@
 
     <main>
         <section class="well well__offset-3">
-           <div id="datepicker"></div>
+           <center>
+               <p>Date: <input id="datepicker"></p>
+            </center>
         </section>
     </main>
 
