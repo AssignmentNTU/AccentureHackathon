@@ -38,11 +38,11 @@ function initMap() {
 
     autocomplete.addListener('place_changed', function() {
 
-        infowindow.close(); 
+        infowindow.close();
         console.log("localStorage: "+localStorage.getItem('key'));
         place = autocomplete.getPlace(); // store the place details
         //make a varaiale that will be shared to all pages
-       // alert(place.formatted_address);
+        // alert(place.formatted_address);
         $('#Result').html("<h2>"+input.value+"</h2><br/><h2>"+place.formatted_address+"</h2>");
         $('#buttonAddToCalendar').css("display","block");
         if (!place.geometry) {
