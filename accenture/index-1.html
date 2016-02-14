@@ -23,7 +23,10 @@
 
         var Schedule = Parse.Object.extend("Schedule");
         var sched = new Schedule();
-        var ret = 0; 
+        var ret = true; 
+
+
+
 
         $(function() {
               Parse.initialize("BDGyl4cvobyTGJ2pqSUMjMpol0sRfF6zuSAy8UpT", "QlSRwUtDnZsX1PoEEQqId4sCaYLSuBClzYCMwRL8");
@@ -35,21 +38,26 @@
                 buttonText: "Select date"
             });
 
+                   //function for button click
+                    $('#buttonAdd').click(function(){
+                        document.location.href = "index-2.html";
+                        console.log("Click");
+                    });
+
+
             $("#datepicker").on("change",function(){
                 $( "#datepicker" ).datepicker( "option", "dateFormat", "d MM, y");
                 var selected = $(this).val(); // store the selected date
 
                 //first thing to do id to see whether there has a data like that in cloud 
-
-
                 //after the date is picked then
                 //function to initialize parse
                  $('#GenerateTable').empty();
                  $('#buttonAdd').css("display","block");
+                 ret = true;
                   makeTable(selected);
                  console.log("Number: "+ret);
-                 if(ret == 0){
-
+                 if(ret == true){
                     sched.set("Time",selected);
                     sched.set("DataString","Jurong Point");
                     console.log("new Data");
@@ -58,7 +66,7 @@
                     // Execute any logic that should take place after the object is saved.
                     //alert('New object created with objectId: ' + object.id);
 
-                    alert('No Event has ever created');
+                    //alert('No Event has ever created');
                     },
                     error: function(gameScore, error) {
                      // Execute any logic that should take place if the save fails.
@@ -79,7 +87,6 @@
                 
                 var body = document.getElementById('GenerateTable');
                 var tbl = document.createElement('table');
-                ret = 0;
                 tbl.style.width = '100%';
                 tbl.setAttribute('border','1');
                 var query = new Parse.Query(Schedule);
@@ -89,8 +96,10 @@
                         for(var i in result){
                             var time = result[i].get("Time");
                             var dataString = result[i].get("DataString");
+                            
                             if(time != selectedTime) continue;
-                            ret = 1;
+                            ret = false;
+                            console.log("ret: "+ret);
                             var tr = tbl.insertRow();
                             //var td = tr.insertCell();
                             //td.style.border = '1px solid #fff';
