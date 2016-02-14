@@ -4,32 +4,134 @@
     <title>Schedule</title>
     <meta charset="utf-8">
     <meta name="format-detection" content="telephone=no"/>
-    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <!--<link rel="icon" href="images/favicon.ico" type="image/x-icon">-->
     <link rel="stylesheet" href="css/grid.css">
     <link rel="stylesheet" href="css/style.css">
 
     <script src="js/jquery.js"></script>
     <script src="js/jquery-migrate-1.2.1.js"></script>
 
+    <!--For Parse-->
+      <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+        <script type="text/javascript" src="http://www.parsecdn.com/js/parse-latest.js"></script>
     <!-- For date picker -->
     <link rel="stylesheet" href="css/jquery-ui.css">
     <script src="js/jquery-1.10.2.js"></script>
     <script src="js/jquery-ui.js"></script>
-    <link rel="stylesheet" href="/resources/demos/style.css">
+    <!--<link rel="stylesheet" href="/resources/demos/style.css">-->
     <script>
+
+        var Schedule = Parse.Object.extend("Schedule");
+        var sched = new Schedule();
+        var ret = 0; 
+
         $(function() {
+              Parse.initialize("BDGyl4cvobyTGJ2pqSUMjMpol0sRfF6zuSAy8UpT", "QlSRwUtDnZsX1PoEEQqId4sCaYLSuBClzYCMwRL8");
+              makeTable();
             $( "#datepicker" ).datepicker({
                 showOn: "button",
                 buttonImage: "images/calendar.gif",
                 buttonImageOnly: true,
                 buttonText: "Select date"
             });
+
             $("#datepicker").on("change",function(){
                 $( "#datepicker" ).datepicker( "option", "dateFormat", "d MM, y");
                 var selected = $(this).val(); // store the selected date
+
+                //first thing to do id to see whether there has a data like that in cloud 
+
+
+                //after the date is picked then
+                //function to initialize parse
+                 $('#GenerateTable').empty();
+                 $('#buttonAdd').css("display","block");
+                  makeTable(selected);
+                 console.log("Number: "+ret);
+                 if(ret == 0){
+
+                    sched.set("Time",selected);
+                    sched.set("DataString","Jurong Point");
+                    console.log("new Data");
+                    sched.save(null, {
+                    success: function(object) {
+                    // Execute any logic that should take place after the object is saved.
+                    //alert('New object created with objectId: ' + object.id);
+
+                    alert('No Event has ever created');
+                    },
+                    error: function(gameScore, error) {
+                     // Execute any logic that should take place if the save fails.
+                    // error is a Parse.Error with an error code and message.
+                      alert('Failed to create new object, with error code: ' + error.message);
+                     }
+                });
+             }
             });
+
+            
+
         });
+
+        //to generate table 
+        function makeTable(selectedTime){
+                //to make table\
+                
+                var body = document.getElementById('GenerateTable');
+                var tbl = document.createElement('table');
+                ret = 0;
+                tbl.style.width = '100%';
+                tbl.setAttribute('border','1');
+                var query = new Parse.Query(Schedule);
+                    query.find({
+                        success: function(result){
+                            
+                        for(var i in result){
+                            var time = result[i].get("Time");
+                            var dataString = result[i].get("DataString");
+                            if(time != selectedTime) continue;
+                            ret = 1;
+                            var tr = tbl.insertRow();
+                            //var td = tr.insertCell();
+                            //td.style.border = '1px solid #fff';
+                            var secondTd = tr.insertCell();
+                            secondTd.style.border = '1px solid #fff'; 
+
+                            console.log("Time: "+time+"dataString: "+dataString);
+                           // td.appendChild(document.createTextNode(time));
+                            secondTd.appendChild(document.createTextNode(dataString));
+                            tr.appendChild(secondTd);
+                        }
+                        body.appendChild(tbl);
+                    }
+                });
+        
+        }
+
+
+
+
     </script>
+
+    <style type="text/css">
+        #ScheduleTable{
+            width: 100%;
+            border: #fff solid;
+            font-size: 40px;
+        }
+
+        #ScheduleTable tr{
+           border: #fff solid; 
+        }
+
+        #ScheduleTable td{
+           border: #fff solid; 
+        }
+
+        #buttonAdd{
+            display: none;
+        }
+    </style>
 
    <!--[if lt IE 9]>
     <html class="lt-ie9">
@@ -98,9 +200,14 @@
 
     <!--========================================================
                               FOOTER
-    =========================================================-->
+    =========================================================-
+
+    ListView of the schedule 
+    ->
+    <div class="container">
+    <!--
     <footer>
-        <div class="container">
+ 
             <ul class="socials">
                 <li><a href="#" class="fa fa-facebook"></a></li>
                 <li><a href="#" class="fa fa-tumblr"></a></li>
@@ -111,8 +218,13 @@
             </div>
         </div>
         <div class="tm"><a href="#"><img src="images/TM_logo.png" alt=""></a></div>
-    </footer>
-</div>
+    </footer> -->
+    <div id="GenerateTable">
+        <h2>Schedule</h2>
+        <br/><br/>
+    </div>
+    <button id="buttonAdd">Add Event</button>></button>
+    </div>
 
 <script src="js/script.js"></script>
 </body>
