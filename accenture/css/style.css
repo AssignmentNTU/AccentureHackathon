@@ -639,6 +639,12 @@ main {
 .well__offset-4 {
   padding: 116px 0 129px 0;
 }
+.well__offset-5 {
+  padding: 0 0 116px 0;
+}
+.well__offset-6 {
+  padding: 67px 0 30px 0;
+}
 /*==================    Buttons    ======================*/
 .btn {
   position: relative;
