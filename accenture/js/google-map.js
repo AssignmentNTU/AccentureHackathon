@@ -13,11 +13,41 @@ function initMap() {
 
 
     autocomplete.addListener('place_changed', function() {
-        infowindow.close();
-
-
+        infowindow.close(); 
+        console.log("localStorage: "+localStorage["key"]);
         var place = autocomplete.getPlace(); // store the place details
+        $('#Result').html("<h2>"+input.value+"</h2><br/><h2>"+place.formatted_address+"</h2>");
+        $('#buttonAddToCalendar').css("display","block");
+        $('#buttonAddToCalendar').click(function(){
+            console.log("Add to calendar has been saved");
+            //local storage 
+            var timeChoosen =  localStorage["key"] ;
 
+            var Schedule = Parse.Object.extend("Schedule");
+            var sched = new Schedule();
+            Parse.initialize("BDGyl4cvobyTGJ2pqSUMjMpol0sRfF6zuSAy8UpT", "QlSRwUtDnZsX1PoEEQqId4sCaYLSuBClzYCMwRL8");
+            sched.set("Time",timeChoosen);
+            sched.set("DataString",input.value);
+            sched.save(null, {
+                    success: function(object) {
+                    // Execute any logic that should take place after the object is saved.
+                    //alert('New object created with objectId: ' + object.id);
+                    //alert('No Event has ever created');
+                    alert(input.value+" success");
+                    },
+                    error: function(gameScore, error) {
+                        // Execute any logic that should take place if the save fails.
+                        // error is a Parse.Error with an error code and message.
+                        alert('Failed to create new object, with error code: ' + error.message);
+                    }
+            });
+        });
+
+
+
+        //make a varaiale that will be shared to all pages
+        localStorage["location"] = input.value;
+       // alert(place.formatted_address);
         if (!place.geometry) {
             window.alert("Autocomplete's returned place contains no geometry");
             return;
