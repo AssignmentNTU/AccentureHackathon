@@ -15,6 +15,7 @@ function initMap() {
     autocomplete.addListener('place_changed', function() {
         infowindow.close();
 
+
         var place = autocomplete.getPlace(); // store the place details
 
         if (!place.geometry) {
