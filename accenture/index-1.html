@@ -24,13 +24,13 @@
         var Schedule = Parse.Object.extend("Schedule");
         var sched = new Schedule();
         var ret = true; 
-
-
+        var url = "index-2.html";
 
 
         $(function() {
               Parse.initialize("BDGyl4cvobyTGJ2pqSUMjMpol0sRfF6zuSAy8UpT", "QlSRwUtDnZsX1PoEEQqId4sCaYLSuBClzYCMwRL8");
               makeTable();
+
             $( "#datepicker" ).datepicker({
                 showOn: "button",
                 buttonImage: "images/calendar.gif",
@@ -40,7 +40,7 @@
 
                    //function for button click
                     $('#buttonAdd').click(function(){
-                        document.location.href = "index-2.html";
+                        document.location.href = url;
                         console.log("Click");
                     });
 
@@ -60,6 +60,7 @@
                  if(ret == true){
                     sched.set("Time",selected);
                     sched.set("DataString","Jurong Point");
+                    localStorage["key"] = selected;
                     console.log("new Data");
                     sched.save(null, {
                     success: function(object) {
@@ -75,9 +76,7 @@
                      }
                 });
              }
-            });
-
-            
+            });   
 
         });
 
