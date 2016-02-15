@@ -39,6 +39,7 @@ function initMap() {
             var idBut = 'buttonRes'+p;
             p++;
             $('#Result').append("<center><button class='btn' style='display:block;' id="+idBut+">Add Place</button></center>");
+            $('#Result').append("<hr>");
         }
     }
 
