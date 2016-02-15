@@ -20,7 +20,8 @@ function initMap() {
         service.getDetails(request, callback);
         function callback(place, status) {
             //document.getElementById("Result").innerHTML = place.name; // example
-            $('#Result').append("<h3>"+place.name+"</h3>"+"<h3>"+place.formatted_address+"</h3>"+"<button>"+"Add Place"+"</button>");
+            
+            $('#Result').append('<div><h2 style="font-size:36px;">'+place.name+'</h2><h3">'+place.formatted_address+'</h3></div>'+'<button class="btn">Add place</button>');
             console.log(place.name);
         }
     }
