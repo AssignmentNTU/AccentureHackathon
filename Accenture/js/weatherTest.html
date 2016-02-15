@@ -1,0 +1,16 @@
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+<script>
+    jQuery(document).ready(function($) {
+        $.ajax({
+            url : "http://api.wunderground.com/api/8d032b107a9dec5a/geolookup/conditions/q/IA/Singapore.json",
+            dataType : "jsonp",
+            success : function(parsed_json) {
+                var location = parsed_json['location']['city'];
+                var temp = parsed_json['current_observation']['temp_c']; // store the current temperature
+                var condition = parsed_json['current_observation']['icon']; // store the current weather
+                var image_url = parsed_json['current_observation']['icon_url']; // store the icon url, if needed
+                alert("Current temperature in " + location + " is: " + temp + condition);
+            }
+        });
+    });
+</script>

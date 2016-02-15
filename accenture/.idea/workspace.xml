@@ -71,11 +71,21 @@
         <entry file="file://$PROJECT_DIR$/js/google-map-hotels.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="41" column="40" selection-start-line="41" selection-start-column="40" selection-end-line="41" selection-end-column="40" />
+              <caret line="20" column="31" selection-start-line="20" selection-start-column="31" selection-end-line="21" selection-end-column="31" />
               <folding>
                 <marker date="1455515009902" expanded="true" signature="1427:1442" placeholder="..." />
                 <marker date="1455515009902" expanded="true" signature="1653:1667" placeholder="..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="weatherTest.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/js/weatherTest.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.14629948">
+              <caret line="5" column="29" selection-start-line="5" selection-start-column="29" selection-end-line="5" selection-end-column="29" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -93,11 +103,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="google-map-tourist-attractions.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="google-map-tourist-attractions.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/google-map-tourist-attractions.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.8121911">
-              <caret line="41" column="40" selection-start-line="41" selection-start-column="40" selection-end-line="41" selection-end-column="40" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="16" column="34" selection-start-line="16" selection-start-column="34" selection-end-line="16" selection-end-column="34" />
               <folding>
                 <marker date="1455515009960" expanded="true" signature="1391:1406" placeholder="..." />
                 <marker date="1455515009960" expanded="true" signature="1617:1631" placeholder="..." />
@@ -111,8 +121,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Html5" />
         <option value="JavaScript File" />
+        <option value="Html5" />
       </list>
     </option>
   </component>
@@ -147,6 +157,7 @@
         <option value="$PROJECT_DIR$/js/google-map-hotels.js" />
         <option value="$PROJECT_DIR$/js/google-map-shopping-centres.js" />
         <option value="$PROJECT_DIR$/js/google-map-tourist-attractions.js" />
+        <option value="$PROJECT_DIR$/js/weatherTest.html" />
       </list>
     </option>
   </component>
@@ -834,6 +845,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/js/google-map-tourist-attractions.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="16" column="34" selection-start-line="16" selection-start-column="34" selection-end-line="16" selection-end-column="34" />
+          <folding>
+            <marker date="1455515009960" expanded="true" signature="1391:1406" placeholder="..." />
+            <marker date="1455515009960" expanded="true" signature="1617:1631" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/js/google-map-museums.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -848,7 +870,7 @@
     <entry file="file://$PROJECT_DIR$/js/google-map-hotels.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="41" column="40" selection-start-line="41" selection-start-column="40" selection-end-line="41" selection-end-column="40" />
+          <caret line="20" column="31" selection-start-line="20" selection-start-column="31" selection-end-line="21" selection-end-column="31" />
           <folding>
             <marker date="1455515009902" expanded="true" signature="1427:1442" placeholder="..." />
             <marker date="1455515009902" expanded="true" signature="1653:1667" placeholder="..." />
@@ -867,14 +889,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/google-map-tourist-attractions.js">
+    <entry file="file://$PROJECT_DIR$/js/weatherTest.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8121911">
-          <caret line="41" column="40" selection-start-line="41" selection-start-column="40" selection-end-line="41" selection-end-column="40" />
-          <folding>
-            <marker date="1455515009960" expanded="true" signature="1391:1406" placeholder="..." />
-            <marker date="1455515009960" expanded="true" signature="1617:1631" placeholder="..." />
-          </folding>
+        <state vertical-scroll-proportion="0.14629948">
+          <caret line="5" column="29" selection-start-line="5" selection-start-column="29" selection-end-line="5" selection-end-column="29" />
+          <folding />
         </state>
       </provider>
     </entry>
