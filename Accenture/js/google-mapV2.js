@@ -10,31 +10,21 @@ function initMap() {
     var autocomplete = new google.maps.places.Autocomplete(input);
     var place;
     var infowindow = new google.maps.InfoWindow();
+    var arrays     = ['ChIJ65FHOAoZ2jERt6wmVoHZYtI','ChIJ5UF2fKAZ2jERtucV-pyj6Tc','ChIJddaus3QZ2jERlb6DZopDEig','ChIJkaQdeLEZ2jERO0CLf0C7-uU','ChIJZ-i99G0Z2jERgQTAC48WSj4','ChIJy3MWmbEZ2jERLD_8NrEakrw','ChIJnzfVXaQZ2jER6Z8ZLoosM4o','ChIJ6Tb2U5cZ2jERKZIWjyFotbs','ChIJsSmt3wgZ2jERzmVdqGYajrk','ChIJ_VyFuDwa2jER4Z74okgmnBg'];
+    for(var i = 0 ; i < 10 ; i++){
+        var request = {
+        placeId: arrays[i] // change this with the place_id
+        };
 
+        var service = new google.maps.places.PlacesService(map);
+        service.getDetails(request, callback);
+        function callback(place, status) {
+            //document.getElementById("Result").innerHTML = place.name; // example
+            $('#Result').append("<h3>"+place.name+"</h3>"+"<h3>"+"wow"+"</h3>"+"<button>"+"add to event"+"</button>");
+            console.log(place.name);
+        }
+    }
 
-    $('#buttonAddToCalendar').click(function(){
-        console.log("Add to calendar has been saved");
-        //local storage
-        var timeChoosen =  localStorage.getItem('key');
-        var Schedule = Parse.Object.extend("Schedule");
-        var sched = new Schedule();
-        Parse.initialize("BDGyl4cvobyTGJ2pqSUMjMpol0sRfF6zuSAy8UpT", "QlSRwUtDnZsX1PoEEQqId4sCaYLSuBClzYCMwRL8");
-        sched.set("Time",timeChoosen);
-        sched.set("DataString",input.value);
-        sched.save(null, {
-            success: function(object) {
-                // Execute any logic that should take place after the object is saved.
-                //alert('New object created with objectId: ' + object.id);
-                //alert('No Event has ever created');
-                alert(input.value+" success");
-            },
-            error: function(gameScore, error) {
-                // Execute any logic that should take place if the save fails.
-                // error is a Parse.Error with an error code and message.
-                alert('Failed to create new object, with error code: ' + error.message);
-            }
-        });
-    });
 
     autocomplete.addListener('place_changed', function() {
 
@@ -43,8 +33,8 @@ function initMap() {
         place = autocomplete.getPlace(); // store the place details
         //make a varaiale that will be shared to all pages
         // alert(place.formatted_address);
-        $('#Result').html("<h2>"+input.value+"</h2><br/><h2>"+place.formatted_address+"</h2>");
-        $('#buttonAddToCalendar').css("display","block");
+        //$('#Result').html("<h2>"+input.value+"</h2><br/><h2>"+place.formatted_address+"</h2>");
+        //$('#buttonAddToCalendar').css("display","block");
         if (!place.geometry) {
             window.alert("Autocomplete's returned place contains no geometry");
             return;
