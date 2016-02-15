@@ -12,21 +12,13 @@
     <script src="js/jquery.js"></script>
     <script src="js/jquery-migrate-1.2.1.js"></script>
 
-<<<<<<< HEAD
-=======
     <!--For Parse-->
       <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
         <script type="text/javascript" src="http://www.parsecdn.com/js/parse-latest.js"></script>
->>>>>>> 51b665204d4735f152ab765d7e809c6bc112ab37
     <!-- For date picker -->
     <link rel="stylesheet" href="css/jquery-ui.css">
     <script src="js/jquery-1.10.2.js"></script>
     <script src="js/jquery-ui.js"></script>
-<<<<<<< HEAD
-    <link rel="stylesheet" href="/resources/demos/style.css">
-    <script>
-        $(function() {
-=======
     <!--<link rel="stylesheet" href="/resources/demos/style.css">-->
     <script>
 
@@ -40,22 +32,18 @@
               Parse.initialize("BDGyl4cvobyTGJ2pqSUMjMpol0sRfF6zuSAy8UpT", "QlSRwUtDnZsX1PoEEQqId4sCaYLSuBClzYCMwRL8");
               makeTable();
             
->>>>>>> 51b665204d4735f152ab765d7e809c6bc112ab37
+              //if Generate Plan is clicked
+              $('#GeneratePlan').click(function(){
+                    document.location.href = "GeneratePlan.html";
+              });
+
+
             $( "#datepicker" ).datepicker({
                 showOn: "button",
                 buttonImage: "images/calendar.gif",
                 buttonImageOnly: true,
                 buttonText: "Select date"
             });
-<<<<<<< HEAD
-            $("#datepicker").on("change",function(){
-                $( "#datepicker" ).datepicker( "option", "dateFormat", "d MM, y");
-                var selected = $(this).val(); // store the selected date
-            });
-        });
-    </script>
-
-=======
                    //function for button click
             $('#buttonAdd').click(function(){
                 document.location.href = url;
@@ -79,6 +67,7 @@
                 //function to initialize parse
                  $('#GenerateTable').empty();
                  $('#buttonAdd').css("display","block");
+                 $('#GeneratePlan').css("display","block");
                  ret = true;
                 makeTable(selected);
                  console.log("Number: "+ret);
@@ -170,6 +159,11 @@
             display: none;
             
         }
+
+        #GeneratePlan{
+            display: block;
+        }
+
         #datepicker{
             font-size: 14px;
             width: 200px;
@@ -195,7 +189,6 @@
         }
     </style>
 
->>>>>>> 51b665204d4735f152ab765d7e809c6bc112ab37
    <!--[if lt IE 9]>
     <html class="lt-ie9">
     <div style=' clear: both; text-align:center; position: relative;'>
@@ -236,15 +229,26 @@
                         </li>
                         <li>
                             <a href="index-2.html">Search</a>
-<<<<<<< HEAD
-                        </li>
-                        <li>
-                            <a href="index-3.html">Menu</a>
-                        </li>
-                        <li>
-                            <a href="index-4.html">Contacts</a>
-=======
->>>>>>> 51b665204d4735f152ab765d7e809c6bc112ab37
+                            <ul>
+                                <li>
+                                    <a href="index-restaurant.html">Restaurants</a>
+                                </li>
+                                <li>
+                                    <a href="index-hotel.html">Hotels</a>
+                                </li>
+                                <li>
+                                    <a href="index-public-library.html">Public Libraries</a>
+                                </li>
+                                <li>
+                                    <a href="index-shopping-centre.html">Shopping Centres</a>
+                                </li>
+                                <li>
+                                    <a href="index-museum.html">Museums</a>
+                                </li>
+                                <li>
+                                    <a href="index-tourist-attraction.html">Tourist Attractions</a>
+                                </li>
+                            </ul>
                         </li>
                         
                     </ul>
@@ -258,12 +262,6 @@
     =========================================================-->
 
     <main>
-<<<<<<< HEAD
-        <section class="well well__offset-3">
-           <center>
-               <p>Date: <input id="datepicker"></p>
-            </center>
-=======
         <section class="well well__offset-6">
             <h2><em style="font-size:48px;s">Schedule</em></h2>
             <center>
@@ -276,6 +274,7 @@
                 <div id="GenerateTable">
                 </div>
                 <button class="btn" id="buttonAdd">Add Place</button>
+                <button class="btn" id= "GeneratePlan">Generate Plan</button>
             </center>
             
             <!--<form id="contact-form" class="contact-form">
@@ -285,7 +284,6 @@
                     </div> 
                 </center>
            </form>-->
->>>>>>> 51b665204d4735f152ab765d7e809c6bc112ab37
         </section>
     </main>
 
