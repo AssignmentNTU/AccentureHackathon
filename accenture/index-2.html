@@ -18,6 +18,8 @@
             async defer></script>
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 <script type="text/javascript" src="http://www.parsecdn.com/js/parse-latest.js"></script>
+    
+    
     <style type="text/css">
     #buttonAddToCalendar{
         display: none;
@@ -59,16 +61,10 @@
                             <a href="index.html">Home</a>
                         </li>
                         <li>
-                            <a href="index-1.html">Schedule</a>
+                            <a href="index-1.html">Calendar</a>
                         </li>
                         <li class="active">
                             <a href="index-2.html">Search</a>
-                        </li>
-                        <li>
-                            <a href="index-3.html">Menu</a>
-                        </li>
-                        <li>
-                            <a href="index-4.html">Contacts</a>
                         </li>
                     </ul>
                 </nav>
@@ -80,20 +76,22 @@
                               CONTENT
     =========================================================-->
     <main>
-        <section>
+        <section class="well well__offset-6">
+            <center>
             <input id="pac-input" class="controls" type="text"
                    placeholder="Enter a location">
-
+            </center>
             <div id="map"></div>
 
         </section>
-        <div id="Result">
+        <section class="well well__offset-5">
+            <div id="Result">
             
-        </div>
-        <br/>
-        <br/>
-        <center>
-        <button id="buttonAddToCalendar">Add to calendar</button></center>
+            </div>
+            <center>
+                <button class="btn" id="buttonAddToCalendar">Add to calendar</button>
+            </center>
+        </section>
         
         <!--
         <section class="well well__offset-3">
@@ -140,24 +138,24 @@
                     </div>
                 </div>
             </div>
-        </section>
-    </main>-->
+        </section>-->
+    </main>
 
     <!--========================================================
                               FOOTER
     =========================================================-->
-    <footer>
+     <footer>
         <div class="container">
-            <ul class="socials">
+            <!--<ul class="socials">
                 <li><a href="#" class="fa fa-facebook"></a></li>
                 <li><a href="#" class="fa fa-tumblr"></a></li>
                 <li><a href="#" class="fa fa-google-plus"></a></li>
-            </ul>
-            <div class="copyright">© <span id="copyright-year"></span> |
-                <a href="#">Privacy Policy</a>
+            </ul>-->
+            <div class="copyright" style="margin-bottom:30px;">© <span id="copyright-year"></span> |
+                <a href="#">CACAD</a>
             </div>
         </div>
-        <div class="tm"><a href="#"><img src="images/TM_logo.png" alt=""></a></div>
+        <!--<div class="tm"><a href="#"><img src="images/TM_logo.png" alt=""></a></div>-->
     </footer>
 </div>
 
