@@ -27,25 +27,31 @@
         var ret = true; 
         var url = "index-2.html";
 
-
+        
         $(function() {
               Parse.initialize("BDGyl4cvobyTGJ2pqSUMjMpol0sRfF6zuSAy8UpT", "QlSRwUtDnZsX1PoEEQqId4sCaYLSuBClzYCMwRL8");
               makeTable();
-
+            
             $( "#datepicker" ).datepicker({
                 showOn: "button",
                 buttonImage: "images/calendar.gif",
                 buttonImageOnly: true,
                 buttonText: "Select date"
             });
-
                    //function for button click
-                    $('#buttonAdd').click(function(){
-                        document.location.href = url;
-                        console.log("Click");
-                    });
-
-
+            $('#buttonAdd').click(function(){
+                document.location.href = url;
+                console.log("Click");
+            });
+            
+            $('#datepicker').val(localStorage.getItem('key'));            
+            var value = $('#datepicker').val();
+            console.log("value: "+value);
+            $('#GenerateTable').empty();
+            $('#buttonAdd').css("display","block");
+            makeTable(value);
+            localStorage.setItem('key',value);
+            
             $("#datepicker").on("change",function(){
                 $( "#datepicker" ).datepicker( "option", "dateFormat", "d MM, y");
                 var selected = $(this).val(); // store the selected date
@@ -144,11 +150,30 @@
 
         #buttonAdd{
             display: none;
+            
         }
         #datepicker{
             font-size: 14px;
             width: 200px;
             color: #333;
+            background-color: #fff;
+            font-family: Roboto;
+            font-size: 15px;
+            font-weight: 300;
+            margin-left: 12px;
+            padding: 0 11px 0 13px;
+            text-overflow: ellipsis;
+            width: 300px;
+            border: 1px solid transparent;
+            border-radius: 2px 0 0 2px;
+            box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            height: 32px;
+            outline: none;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+        }
+        #datepicker:focus {
+            border-color: #4d90fe;
         }
     </style>
 
@@ -216,14 +241,16 @@
             <center>
                 <div id="GenerateTable">
                 </div>
+                <button class="btn" id="buttonAdd">Add Place</button>
             </center>
-             <form id="contact-form" class="contact-form">
+            
+            <!--<form id="contact-form" class="contact-form">
                 <center>
                     <div class="btn-wr" id="buttonAdd">
-                        <a class="" href="#" data-type="reset">Add Place</a>
+                        <a class="" href="index-2.html">Add Place</a>
                     </div> 
                 </center>
-           </form>
+           </form>-->
         </section>
     </main>
 
@@ -244,7 +271,7 @@
         <!--<div class="tm"><a href="#"><img src="images/TM_logo.png" alt=""></a></div>-->
     </footer>
     
-    <!--<button id="buttonAdd">Add Event</button>></button>-->
+    <!---->
 </div>
 
 <script src="js/script.js"></script>

@@ -43,7 +43,7 @@ function initMap() {
         place = autocomplete.getPlace(); // store the place details
         //make a varaiale that will be shared to all pages
        // alert(place.formatted_address);
-        $('#Result').html("<h2>"+input.value+"</h2><br/><h2>"+place.formatted_address+"</h2>");
+        $('#Result').html('<div><h2 style=>'+input.value+'</h2><h2>'+place.formatted_address+'</h2></div>');
         $('#buttonAddToCalendar').css("display","block");
         if (!place.geometry) {
             window.alert("Autocomplete's returned place contains no geometry");
