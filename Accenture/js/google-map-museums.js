@@ -35,10 +35,10 @@ function initMap() {
         function callback(place, status) {
             places.push(place.name);
             address.push(place.formatted_address);
-            $('#Result').append("<h3>"+place.name+"</h3>"+"<h3>"+place.formatted_address+"</h3>");
+            $('#Result').append("<div><h2 style='font-size:36px;'>"+place.name+"</h2>"+"<center><h3>"+place.formatted_address+"</h3></center></div>");
             var idBut = 'buttonRes'+p;
             p++;
-            $('#Result').append("<button id="+idBut+">click me</p><br/>");
+            $('#Result').append("<center><button class='btn' style='display:block;' id="+idBut+">Add Place</button></center>");
         }
     }
 

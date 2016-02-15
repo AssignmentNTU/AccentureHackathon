@@ -21,28 +21,67 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/index.html">
+      <file leaf-file-name="google-map-museums.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/google-map-museums.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-12.423077">
-              <caret line="187" column="20" selection-start-line="187" selection-start-column="20" selection-end-line="187" selection-end-column="20" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="40" column="127" selection-start-line="40" selection-start-column="127" selection-end-line="40" selection-end-column="127" />
               <folding>
-                <marker date="1455500962549" expanded="true" signature="755:1199" placeholder="..." />
-                <marker date="1455500962549" expanded="false" signature="773:825" placeholder="..." />
-                <marker date="1455500962549" expanded="true" signature="826:1150" placeholder="..." />
-                <marker date="1455500962549" expanded="true" signature="901:1138" placeholder="..." />
-                <marker date="1455500962549" expanded="true" signature="1001:1125" placeholder="..." />
+                <marker date="1455513331593" expanded="true" signature="1427:1442" placeholder="..." />
+                <marker date="1455513331593" expanded="true" signature="1653:1667" placeholder="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="google-map-museums.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/google-map-museums.js">
+      <file leaf-file-name="google-map-public-libraries.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/google-map-public-libraries.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="34" column="33" selection-start-line="34" selection-start-column="33" selection-end-line="34" selection-end-column="33" />
-              <folding />
+              <caret line="40" column="127" selection-start-line="37" selection-start-column="12" selection-end-line="40" selection-end-column="127" />
+              <folding>
+                <marker date="1455513189559" expanded="true" signature="1427:1442" placeholder="..." />
+                <marker date="1455513189559" expanded="true" signature="1653:1667" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="google-map-restaurants.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/google-map-restaurants.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="40" column="127" selection-start-line="40" selection-start-column="127" selection-end-line="40" selection-end-column="127" />
+              <folding>
+                <marker date="1455513331550" expanded="true" signature="1427:1442" placeholder="..." />
+                <marker date="1455513331550" expanded="true" signature="1653:1667" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="google-map-shopping-centres.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/google-map-shopping-centres.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="40" column="127" selection-start-line="40" selection-start-column="127" selection-end-line="40" selection-end-column="127" />
+              <folding>
+                <marker date="1455513331579" expanded="true" signature="1427:1442" placeholder="..." />
+                <marker date="1455513331579" expanded="true" signature="1653:1667" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="google-map-tourist-attractions.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/google-map-tourist-attractions.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="40" column="127" selection-start-line="40" selection-start-column="127" selection-end-line="40" selection-end-column="127" />
+              <folding>
+                <marker date="1455513331608" expanded="true" signature="1391:1406" placeholder="..." />
+                <marker date="1455513331608" expanded="true" signature="1617:1631" placeholder="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -50,9 +89,12 @@
       <file leaf-file-name="google-map-hotels.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/google-map-hotels.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6721582">
-              <caret line="44" column="46" selection-start-line="44" selection-start-column="46" selection-end-line="44" selection-end-column="46" />
-              <folding />
+            <state vertical-scroll-proportion="0.5881384">
+              <caret line="41" column="9" selection-start-line="41" selection-start-column="9" selection-end-line="41" selection-end-column="9" />
+              <folding>
+                <marker date="1455513331564" expanded="true" signature="1427:1442" placeholder="..." />
+                <marker date="1455513331564" expanded="true" signature="1653:1667" placeholder="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -91,10 +133,10 @@
         <option value="$PROJECT_DIR$/index-public-library.html" />
         <option value="$PROJECT_DIR$/index-tourist-attraction.html" />
         <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/js/google-map-tourist-attractions.js" />
-        <option value="$PROJECT_DIR$/js/google-map-restaurants.js" />
         <option value="$PROJECT_DIR$/js/google-map-public-libraries.js" />
+        <option value="$PROJECT_DIR$/js/google-map-restaurants.js" />
         <option value="$PROJECT_DIR$/js/google-map-shopping-centres.js" />
+        <option value="$PROJECT_DIR$/js/google-map-tourist-attractions.js" />
         <option value="$PROJECT_DIR$/js/google-map-museums.js" />
         <option value="$PROJECT_DIR$/js/google-map-hotels.js" />
       </list>
@@ -355,7 +397,7 @@
           <caret line="32" column="26" selection-start-line="32" selection-start-column="26" selection-end-line="32" selection-end-column="26" />
           <folding>
             <marker date="1455511622078" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1455511622078" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1455511622078" expanded="false" signature="-1:-1" placeholder="..." />
             <marker date="1455511622078" expanded="true" signature="-1:-1" placeholder="..." />
             <marker date="1455511622078" expanded="true" signature="-1:-1" placeholder="..." />
             <marker date="1455511622078" expanded="true" signature="-1:-1" placeholder="..." />
@@ -399,7 +441,7 @@
           <caret line="32" column="26" selection-start-line="32" selection-start-column="26" selection-end-line="32" selection-end-column="26" />
           <folding>
             <marker date="1455511622078" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1455511622078" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1455511622078" expanded="false" signature="-1:-1" placeholder="..." />
             <marker date="1455511622078" expanded="true" signature="-1:-1" placeholder="..." />
             <marker date="1455511622078" expanded="true" signature="-1:-1" placeholder="..." />
             <marker date="1455511622078" expanded="true" signature="-1:-1" placeholder="..." />
@@ -443,7 +485,7 @@
           <caret line="71" column="45" selection-start-line="71" selection-start-column="45" selection-end-line="71" selection-end-column="45" />
           <folding>
             <marker date="1455511622078" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1455511622078" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1455511622078" expanded="false" signature="-1:-1" placeholder="..." />
             <marker date="1455511622078" expanded="true" signature="-1:-1" placeholder="..." />
             <marker date="1455511622078" expanded="true" signature="-1:-1" placeholder="..." />
             <marker date="1455511622078" expanded="true" signature="-1:-1" placeholder="..." />
@@ -479,7 +521,7 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <marker date="1455511622078" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1455511622078" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1455511622078" expanded="false" signature="-1:-1" placeholder="..." />
             <marker date="1455511622078" expanded="true" signature="-1:-1" placeholder="..." />
             <marker date="1455511622078" expanded="true" signature="-1:-1" placeholder="..." />
             <marker date="1455511622078" expanded="true" signature="-1:-1" placeholder="..." />
@@ -614,58 +656,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/google-map.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-12.310345">
-          <caret line="21" column="38" selection-start-line="21" selection-start-column="38" selection-end-line="21" selection-end-column="38" />
-          <folding>
-            <element signature="e#2876#2919#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index-2.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.192307">
-          <caret line="102" column="141" selection-start-line="102" selection-start-column="136" selection-end-line="102" selection-end-column="141" />
-          <folding>
-            <marker date="1455511622078" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1455511622078" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1455511622078" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1455511622078" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1455511622078" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.62069">
-          <caret line="625" column="30" selection-start-line="625" selection-start-column="26" selection-end-line="625" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/category-index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="18" column="42" selection-start-line="18" selection-start-column="42" selection-end-line="18" selection-end-column="42" />
           <folding>
             <element signature="e#0#43#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index-hotel.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.40963855">
-          <caret line="14" column="51" selection-start-line="14" selection-start-column="51" selection-end-line="14" selection-end-column="51" />
-          <folding>
-            <marker date="1455511622073" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1455511622073" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1455511622073" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1455511622073" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1455511622073" expanded="true" signature="-1:-1" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -698,30 +694,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/google-map-restaurants.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5881384">
-          <caret line="21" column="39" selection-start-line="21" selection-start-column="39" selection-end-line="21" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/google-map-public-libraries.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.64415157">
-          <caret line="23" column="24" selection-start-line="23" selection-start-column="24" selection-end-line="23" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/google-map-shopping-centres.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.32784185">
-          <caret line="270" column="11" selection-start-line="270" selection-start-column="11" selection-end-line="270" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index-public-library.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.40963855">
@@ -750,13 +722,63 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-12.423077">
+          <caret line="187" column="20" selection-start-line="187" selection-start-column="20" selection-end-line="187" selection-end-column="20" />
+          <folding>
+            <marker date="1455500962549" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1455500962549" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1455500962549" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1455500962549" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1455500962549" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index-2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7900172">
+          <caret line="96" column="12" selection-start-line="96" selection-start-column="12" selection-end-line="96" selection-end-column="12" />
+          <folding>
+            <marker date="1455511622078" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1455511622078" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1455511622078" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1455511622078" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1455511622078" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index-hotel.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="10.538462">
+          <caret line="28" column="9" selection-start-line="28" selection-start-column="9" selection-end-line="28" selection-end-column="9" />
+          <folding>
+            <marker date="1455511622073" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1455511622073" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1455511622073" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1455511622073" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1455511622073" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="655" column="17" selection-start-line="655" selection-start-column="17" selection-end-line="655" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index-tourist-attraction.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.6781411">
-          <caret line="19" column="73" selection-start-line="19" selection-start-column="73" selection-end-line="19" selection-end-column="73" />
+        <state vertical-scroll-proportion="2.9259896">
+          <caret line="100" column="77" selection-start-line="100" selection-start-column="77" selection-end-line="100" selection-end-column="77" />
           <folding>
             <marker date="1455500318492" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1455500318492" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1455500318492" expanded="true" signature="-1:-1" placeholder="..." />
             <marker date="1455500318492" expanded="true" signature="-1:-1" placeholder="..." />
             <marker date="1455500318492" expanded="true" signature="-1:-1" placeholder="..." />
             <marker date="1455500318492" expanded="true" signature="-1:-1" placeholder="..." />
@@ -764,41 +786,80 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
+    <entry file="file://$PROJECT_DIR$/js/google-map.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-12.423077">
-          <caret line="187" column="20" selection-start-line="187" selection-start-column="20" selection-end-line="187" selection-end-column="20" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="46" column="26" selection-start-line="46" selection-start-column="26" selection-end-line="46" selection-end-column="26" />
           <folding>
-            <marker date="1455500962549" expanded="true" signature="755:1199" placeholder="..." />
-            <marker date="1455500962549" expanded="false" signature="773:825" placeholder="..." />
-            <marker date="1455500962549" expanded="true" signature="826:1150" placeholder="..." />
-            <marker date="1455500962549" expanded="true" signature="901:1138" placeholder="..." />
-            <marker date="1455500962549" expanded="true" signature="1001:1125" placeholder="..." />
+            <element signature="e#2876#2919#0" expanded="false" />
+            <marker date="1455511622163" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/google-map-public-libraries.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="40" column="127" selection-start-line="37" selection-start-column="12" selection-end-line="40" selection-end-column="127" />
+          <folding>
+            <marker date="1455513189559" expanded="true" signature="1427:1442" placeholder="..." />
+            <marker date="1455513189559" expanded="true" signature="1653:1667" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/google-map-restaurants.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="40" column="127" selection-start-line="40" selection-start-column="127" selection-end-line="40" selection-end-column="127" />
+          <folding>
+            <marker date="1455513331550" expanded="true" signature="1427:1442" placeholder="..." />
+            <marker date="1455513331550" expanded="true" signature="1653:1667" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/google-map-shopping-centres.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="40" column="127" selection-start-line="40" selection-start-column="127" selection-end-line="40" selection-end-column="127" />
+          <folding>
+            <marker date="1455513331579" expanded="true" signature="1427:1442" placeholder="..." />
+            <marker date="1455513331579" expanded="true" signature="1653:1667" placeholder="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/google-map-tourist-attractions.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="8.28995">
-          <caret line="296" column="7" selection-start-line="296" selection-start-column="7" selection-end-line="296" selection-end-column="7" />
-          <folding />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="40" column="127" selection-start-line="40" selection-start-column="127" selection-end-line="40" selection-end-column="127" />
+          <folding>
+            <marker date="1455513331608" expanded="true" signature="1391:1406" placeholder="..." />
+            <marker date="1455513331608" expanded="true" signature="1617:1631" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/google-map-museums.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="34" column="33" selection-start-line="34" selection-start-column="33" selection-end-line="34" selection-end-column="33" />
-          <folding />
+          <caret line="40" column="127" selection-start-line="40" selection-start-column="127" selection-end-line="40" selection-end-column="127" />
+          <folding>
+            <marker date="1455513331593" expanded="true" signature="1427:1442" placeholder="..." />
+            <marker date="1455513331593" expanded="true" signature="1653:1667" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/google-map-hotels.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6721582">
-          <caret line="44" column="46" selection-start-line="44" selection-start-column="46" selection-end-line="44" selection-end-column="46" />
-          <folding />
+        <state vertical-scroll-proportion="0.5881384">
+          <caret line="41" column="9" selection-start-line="41" selection-start-column="9" selection-end-line="41" selection-end-column="9" />
+          <folding>
+            <marker date="1455513331564" expanded="true" signature="1427:1442" placeholder="..." />
+            <marker date="1455513331564" expanded="true" signature="1653:1667" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
