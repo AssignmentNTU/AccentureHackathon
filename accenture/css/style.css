@@ -176,6 +176,15 @@ a[href^="tel:"] {
     padding: 0;
   }
 }
+hr {
+  display: block;
+  margin-top: 2em;
+  margin-bottom: 0.5em;
+  margin-left: 5em;
+  margin-right: 5em;
+  border-style: inset;
+  border-width: 2px;
+}
 /*=======================================================
                         Components
 =========================================================*/
@@ -638,6 +647,12 @@ main {
 }
 .well__offset-4 {
   padding: 116px 0 129px 0;
+}
+.well__offset-5 {
+  padding: 0 0 116px 0;
+}
+.well__offset-6 {
+  padding: 67px 0 30px 0;
 }
 /*==================    Buttons    ======================*/
 .btn {
